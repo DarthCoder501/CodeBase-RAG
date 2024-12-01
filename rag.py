@@ -1,6 +1,7 @@
 import requests
 from pinecone import Pinecone, ServerlessSpec
 from dotenv import load_dotenv
+from embeddings import get_huggingface_embeddings
 import os
 
 # Load environment variables
