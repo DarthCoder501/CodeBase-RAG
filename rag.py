@@ -1,6 +1,5 @@
 import requests
 from pinecone import Pinecone, ServerlessSpec
-from dotenv import load_dotenv
 from embeddings import get_huggingface_embeddings
 from keys import PINECONE_API_KEY, PINECONE_ENVIRONMENT, PINECONE_INDEX_NAME, PINECONE_NAMESPACE,GROQ_MODEL, GROQ_API_KEY
 
