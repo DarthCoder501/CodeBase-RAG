@@ -1,6 +1,5 @@
 import requests
 from pinecone import Pinecone, ServerlessSpec
-from sentence_transformers import SentenceTransformer
 from dotenv import load_dotenv
 import os
 
@@ -15,9 +14,6 @@ PINECONE_NAMESPACE = 'https://github.com/CoderAgent/SecureAgent'
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 GROQ_MODEL = "llama-3.1-70b-versatile"
 
-def get_huggingface_embeddings(text, model_name="sentence-transformers/all-mpnet-base-v2"):
-    model = SentenceTransformer(model_name)
-    return model.encode(text)
 
 # Initialize Pinecone
 pc = Pinecone(
