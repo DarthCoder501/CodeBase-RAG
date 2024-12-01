@@ -1,8 +1,5 @@
 import os
 
-# Load environment variables
-load_dotenv()
-
 # Set up API keys and configuration
 PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")
 PINECONE_ENVIRONMENT = 'us-east-1'
